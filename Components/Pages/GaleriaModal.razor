@@ -1,0 +1,123 @@
+<!-- GaleriaModal.razor -->
+
+<div class="modal-overlay" @onclick="OnBackgroundClick">
+    <div class="modal-content" @onclick:stopPropagation >
+        <div class="modal-header" style="justify-content: space-between; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                align-items: center; padding: 0.3rem 1rem 1rem;">
+            <h2 style="font-weight: bold">Galeria</h2>
+            <button class="btn-close" @onclick="Close" style=""></button>
+        </div>
+        
+        <div class="modal-body" style="overflow-y: auto;">
+            <div class="projects-container" style="margin-top: 0">
+                <div class="project-card">
+                    <img src="images/lampara.png" alt="Proyecto Comercial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/cubierta.jpg" alt="Proyecto Residencial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/mesas.png" alt="Proyecto Industrial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/asientos.png" class="project-img" alt="">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/lampara.png" alt="Proyecto Comercial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/cubierta.jpg" alt="Proyecto Residencial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/mesas.png" alt="Proyecto Industrial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/asientos.png" class="project-img" alt="">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/lampara.png" alt="Proyecto Comercial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/cubierta.jpg" alt="Proyecto Residencial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/mesas.png" alt="Proyecto Industrial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/asientos.png" class="project-img" alt="">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/lampara.png" alt="Proyecto Comercial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/cubierta.jpg" alt="Proyecto Residencial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/mesas.png" alt="Proyecto Industrial" class="project-img">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/asientos.png" class="project-img" alt="">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer" style="padding: 1rem 1rem 0; justify-items: center">
+            <button class="btn btn-secondary" @onclick="Close">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private Task Close() => OnClose.InvokeAsync();
+
+    private Task OnBackgroundClick() => Close();
+}

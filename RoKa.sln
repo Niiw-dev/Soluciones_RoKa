@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoKa", "RoKa.csproj", "{7AD2C35D-816C-48D2-B244-337BFCC14126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD2C35D-816C-48D2-B244-337BFCC14126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD2C35D-816C-48D2-B244-337BFCC14126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD2C35D-816C-48D2-B244-337BFCC14126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD2C35D-816C-48D2-B244-337BFCC14126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
