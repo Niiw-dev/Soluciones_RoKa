@@ -1,7 +1,6 @@
 using DotNetEnv;
 using Microsoft.AspNetCore.ResponseCompression;
 using RoKa.Components;
-using RoKa.Hubs;
 using RoKa.Services;
 // using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
@@ -33,7 +32,6 @@ builder.Services.AddHttpClient("MiApi", client =>
 
 var app = builder.Build();
 
-app.MapHub<ChatHub>("/chathub");
 app.MapControllers();
 
 // Configure the HTTP request pipeline.
