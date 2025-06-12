@@ -3,7 +3,7 @@ using MailKit.Security;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using RoKa.Infrastructure.Hubs;
+using RoKa.Infrastructure.SignalR;
 using RoKa.Application.Interfaces;
 
 namespace RoKa.Domain.Services;
