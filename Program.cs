@@ -1,7 +1,8 @@
 using DotNetEnv;
 using Microsoft.AspNetCore.ResponseCompression;
 using RoKa.Components;
-using RoKa.Services;
+using RoKa.Domain.Services;
+using RoKa.Application.Interfaces;
 // using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
 Env.Load();

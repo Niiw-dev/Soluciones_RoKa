@@ -1,4 +1,4 @@
-namespace RoKa.Models;
+namespace RoKa.Application.DTOs;
 
 public class EmailRequest
 {

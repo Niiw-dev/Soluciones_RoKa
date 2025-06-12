@@ -1,4 +1,4 @@
-namespace RoKa.Services
+namespace RoKa.Application.Interfaces
 {
 	public interface IEmailService
 	{

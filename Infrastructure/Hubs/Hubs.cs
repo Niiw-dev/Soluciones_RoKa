@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
-namespace RoKa.Hubs
+namespace RoKa.Infrastructure.Hubs
 {
     public class EmailNotificationHub : Hub
     {

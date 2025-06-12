@@ -1,9 +1,9 @@
 // Controllers/EmailController.cs
 using Microsoft.AspNetCore.Mvc;
-using RoKa.Models;
-using RoKa.Services;
+using RoKa.Application.DTOs;
+using RoKa.Application.Interfaces;
 
-namespace RoKa.Controllers;
+namespace RoKa.WebAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

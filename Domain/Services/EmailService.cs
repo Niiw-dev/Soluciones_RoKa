@@ -3,9 +3,10 @@ using MailKit.Security;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using RoKa.Hubs;
+using RoKa.Infrastructure.Hubs;
+using RoKa.Application.Interfaces;
 
-namespace RoKa.Services;
+namespace RoKa.Domain.Services;
 
 public class EmailService : IEmailService
 {
