@@ -10,6 +10,8 @@
       <PackageReference Include="DotNetEnv" Version="3.1.1" />
       <PackageReference Include="MailKit" Version="4.12.1" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.6" />
+      <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+      <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -28,14 +30,6 @@
       <_ContentIncludedByDefault Remove="Components\Pages\Main.razor" />
       <_ContentIncludedByDefault Remove="Components\Routes.razor" />
       <_ContentIncludedByDefault Remove="Components\_Imports.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\App.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\Layout\MainLayout.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\Layout\NavMenu.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\Pages\Error.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\Pages\GaleriaModal.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\Pages\Main.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\Routes.razor" />
-      <_ContentIncludedByDefault Remove="Web\Components\_Imports.razor" />
     </ItemGroup>
 
     <ItemGroup>

@@ -3,12 +3,20 @@ using Microsoft.AspNetCore.ResponseCompression;
 using RoKa.Components;
 using RoKa.Domain.Services;
 using RoKa.Application.Interfaces;
-// using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+// using Serilog;
 
 Env.Load();
 
+// Log.Logger = new LoggerConfiguration()
+//     .MinimumLevel.Debug()
+//     .Enrich.FromLogContext()
+//     .WriteTo.Console()
+//     .WriteTo.File("Logs/Logs.txt", rollingInterval: RollingInterval.Day)
+//     .CreateLogger();
+
 var builder = WebApplication.CreateBuilder(args);
 
+// builder.Host.UseSerilog();
 builder.Services.AddSignalR();
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
@@ -34,6 +42,8 @@ builder.Services.AddHttpClient("MiApi", client =>
 var app = builder.Build();
 
 app.MapControllers();
+
+// app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
