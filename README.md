@@ -58,15 +58,21 @@ Al acceder al sitio, el usuario puede:
 ### 🧩 Estructura del Proyecto
 ```plaintext
 📦 Soluciones_RoKa
- ┣ 📂 Data/                 # Servicios de datos e inyección de dependencias
- ┣ 📂 Hubs/                 # Hubs SignalR para comunicación en tiempo real
- ┣ 📂 Pages/                # Componentes principales de Blazor (razor pages)
- ┣ 📂 Shared/               # Componentes compartidos entre páginas
- ┣ 📂 wwwroot/              # Archivos estáticos (CSS, JS, imágenes)
- ┣ 📜 App.razor             # Archivo raíz de la aplicación Blazor
- ┣ 📜 Program.cs            # Configuración de servicios y aplicación
- ┣ 📜 _Imports.razor        # Importaciones globales de namespaces
- ┗ 📜 README.md             # Documentación del proyecto
+ ┣ 📂 Application/                 # Lógica de aplicación: servicios, modelos y configuración de dependencias
+ ┣ 📂 Components/                  # Componentes de interfaz (páginas .razor y layouts de Blazor)
+ ┣ 📂 Domain/                      # Entidades y modelos de dominio del sistema
+       ┣ 📂 Services/              # Servicios específicos del dominio (interfaces o lógica de negocio)
+ ┣ 📂 Infrastructure/              # Implementaciones de infraestructura (SignalR, persistencia, integraciones)
+       ┣ 📂 SignalR/               # Hubs y clases para comunicación en tiempo real
+ ┣ 📂 Properties/                  # Configuración del proyecto (launchSettings.json y metadatos)
+ ┣ 📂 WebAPI/                      # Controladores y endpoints API del backend
+       ┣ 📂 Controllers/           # Controladores para manejar peticiones HTTP (API REST)
+ ┣ 📂 wwwroot/                     # Archivos estáticos (CSS, JS, imágenes, favicon, etc.)
+ ┣ 📜 .env                         # Variables de entorno y configuración local
+ ┣ 📜 Program.cs                   # Punto de entrada del proyecto y configuración del host
+ ┣ 📜 RoKa.csproj                  # Archivo del proyecto con dependencias y propiedades de compilación
+ ┣ 📜 RoKa.sln                     # Solución principal del proyecto Blazor
+ ┗ 📜 README.md                    # Documentación y guía del proyecto
 ```
 
 ---
